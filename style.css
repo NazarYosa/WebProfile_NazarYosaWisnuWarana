@@ -73,12 +73,8 @@
   }
 
   .detail h2 {
-    font-size: 4.2rem;
+    font-size: 3rem;
     font-weight: 700;
-  }
-
-  .detail h2:nth-of-type(2) {
-    margin-bottom: 2rem;
   }
 
   span {
@@ -86,7 +82,7 @@
   }
 
   .detail h4 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .detail p {
@@ -101,6 +97,7 @@
     padding: 5px 15px;
     font-weight: bold;
     border-radius: 20px;
+    color: #053B50;
   }
 
   @media (max-width: 768px) {
