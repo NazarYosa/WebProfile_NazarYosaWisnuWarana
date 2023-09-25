@@ -8,10 +8,18 @@
     border: none;
     outline: none;
     font-family: "Poppins", sans-serif;
+    /* border: #fff solid 5px; */
   }
 
   body {
     background-color: #053B50;
+    color: white;
+  }
+
+  section {
+    width: 100%;
+    height: auto;
+    padding: 10rem 9% 2rem;
   }
 
   /* Navbar */
@@ -35,52 +43,61 @@
 
   /* Hero Section */
   .container {
-    width: 100%;
-    height: auto;
     display: flex;
+    justify-content: center;
     align-items: center;
   }
 
-  .container .img {
-    width: 400px;
-    height: 400px;
-    border-radius: 400px;
-    margin: 120px 60px;
-    border: #fff solid 5px;
+  .container img {
+    width: 30vw;
+    animation: floatImage 4s ease-in-out infinite;
+    border-radius: 300px;
+  }
+  
+  @keyframes floatImage {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-2.4rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
 
-  .container .detail {
-    width: 700px;
-    margin-top: -50px;
+  .detail {
+    margin-top: -100px;
+    margin-left: 50px;
   }
 
   .detail h2 {
-    font-size: 50px;
-    font-weight: bold;
-    color: #fff;
+    font-size: 4.2rem;
+    font-weight: 700;
   }
 
-  .detail h2 span {
+  .detail h2:nth-of-type(2) {
+    margin-bottom: 2rem;
+  }
+
+  span {
     color: #64CCC5;
   }
 
   .detail h4 {
     font-size: 30px;
-    font-weight: bold;
-    color: #fff;
   }
 
   .detail p {
-    font-size: 17px;
-    color: #fff;
-    margin-bottom: 20px;
+    font-size: 1rem;
+    margin-bottom: 10px;
   }
 
-  .detail a {
+  .btn {
     display: inline-block;
+    font-size: 10px;
     background-color: #64CCC5;
-    font-size: 1rem;
-    padding: 10px 20px;
-    border-radius: 30px;
-    font-weight: 700;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 20px;
   }
