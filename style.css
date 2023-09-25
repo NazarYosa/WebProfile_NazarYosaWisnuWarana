@@ -34,7 +34,8 @@
 
   .navbar a {
     color: #fff;
-    margin-right: 3rem;
+    line-height: 30px;
+    padding: 10px;
   }
 
   .navbar a:hover {
@@ -100,4 +101,51 @@
     padding: 5px 15px;
     font-weight: bold;
     border-radius: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .container img {
+      margin-right: 0;
+      width: 50vw;
+    }
+
+    .detail {
+      margin-left: 0;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .detail h2 {
+      font-size: 35px
+    }
+
+    .detail p {
+      font-size: 20px;
+    }
+
+    .btn {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .navbar {
+      font-size: 10px;
+    }
+
+    .detail h2 {
+      font-size: 30px;
+    }
+
+    .detail p {
+      font-size: 20px;
+    }
+
+    .btn {
+      font-size: 15px;
+    }
   }
