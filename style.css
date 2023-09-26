@@ -1,148 +1,170 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    font-family: "Poppins", sans-serif;
-    /* border: #fff solid 5px; */
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  /* border: #fff solid 5px; */
+}
 
-  body {
-    background-color: #053B50;
-    color: white;
-  }
+body {
+  background-color: #053b50;
+  color: white;
+}
 
-  section {
-    width: 100%;
-    height: auto;
-    padding: 10rem 9% 2rem;
-  }
+section {
+  width: 100%;
+  height: auto;
+  padding: 10rem 9% 2rem;
+}
 
-  /* Navbar */
-  .header {
-    color: white;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-  }
+/* Navbar */
+.header {
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
 
-  .navbar a {
-    color: #fff;
-    line-height: 30px;
-    padding: 10px;
-  }
+.navbar a {
+  color: #fff;
+  line-height: 30px;
+  padding: 10px;
+}
 
-  .navbar a:hover {
-    color: #64CCC5;
-  }
+.navbar a:hover {
+  color: #64ccc5;
+}
 
-  /* Hero Section */
+/* Hero Section */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container img {
+  width: 30vw;
+  animation: myAnim 5s ease-in 0s 100000000000000 normal both;
+  border-radius: 300px;
+}
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+
+	10% {
+		transform: rotate(8deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-10deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(10deg);
+	}
+
+	80% {
+		transform: rotate(-8deg);
+	}
+
+	90% {
+		transform: rotate(8deg);
+	}
+}
+
+.detail {
+  margin-top: -100px;
+  margin-left: 50px;
+}
+
+.detail h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+span {
+  color: #64ccc5;
+}
+
+.detail h4 {
+  font-size: 25px;
+}
+
+.detail p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 10px;
+  background-color: #64ccc5;
+  padding: 10px 15px;
+  font-weight: bold;
+  border-radius: 20px;
+  color: #053b50;
+}
+
+
+@media (max-width: 768px) {
   .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
   }
 
   .container img {
-    width: 30vw;
-    animation: floatImage 4s ease-in-out infinite;
-    border-radius: 300px;
-  }
-  
-  @keyframes floatImage {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-2.4rem);
-    }
-    100% {
-      transform: translateY(0);
-    }
+    margin-right: 0;
+    width: 50vw;
+    margin-top: -90px;
   }
 
   .detail {
-    margin-top: -100px;
-    margin-left: 50px;
+    margin-left: 0;
+    margin-top: 40px;
+    text-align: center;
   }
 
   .detail h2 {
-    font-size: 3rem;
-    font-weight: 700;
-  }
-
-  span {
-    color: #64CCC5;
-  }
-
-  .detail h4 {
-    font-size: 25px;
+    font-size: 35px;
   }
 
   .detail p {
-    font-size: 1rem;
-    margin-bottom: 10px;
+    font-size: 20px;
   }
 
   .btn {
-    display: inline-block;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar {
     font-size: 10px;
-    background-color: #64CCC5;
-    padding: 5px 15px;
-    font-weight: bold;
-    border-radius: 20px;
-    color: #053B50;
   }
 
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-    }
-
-    .container img {
-      margin-right: 0;
-      width: 50vw;
-    }
-
-    .detail {
-      margin-left: 0;
-      margin-top: 40px;
-      text-align: center;
-    }
-
-    .detail h2 {
-      font-size: 35px
-    }
-
-    .detail p {
-      font-size: 20px;
-    }
-
-    .btn {
-      font-size: 20px;
-    }
+  .detail h2 {
+    font-size: 30px;
   }
 
-  @media (max-width: 450px) {
-    .navbar {
-      font-size: 10px;
-    }
-
-    .detail h2 {
-      font-size: 30px;
-    }
-
-    .detail p {
-      font-size: 20px;
-    }
-
-    .btn {
-      font-size: 15px;
-    }
+  .detail p {
+    font-size: 20px;
   }
+
+  .btn {
+    font-size: 15px;
+  }
+}
